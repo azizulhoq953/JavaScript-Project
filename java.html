@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        
+        <title>java practice</title>
+       
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script>
+
+            var num1 = prompt("Enter First Number:");
+            var num2 = prompt("Enter Second Number");
+            num1=parseInt(num1,10);
+            num2=parseInt(num2,10);
+            var sum, sub, mul, div, rem;
+            sum = num1 + num2;
+            //document.write("sum="+sum);
+            document.write(num1+ "+" + num2 + "="+ sum);
+
+           // console.log(sum);
+            sub=num1-num2;
+            document.write("<br>");
+            //document.write("\nsubtraction=",sub);
+            document.write( num1+ "-" + num2 + "=" +sub + "<br>");
+
+          mul = num1 * num2;
+            //document.write("sum="+sum);
+            document.write(num1+ "*" + num2 + "="+ mul + "<br>");
+
+           
+            div = num1 / num2;
+            //document.write("sum="+sum);
+            document.write(num1+ "/" + num2 + "="+ div + "<br>");
+
+            rem = num1 % num2;
+            //document.write("sum="+sum);
+            document.write(num1+ "%" + num2 + "="+ rem + "<br>");
+
+        </script>
+    </body> 
+</html>
