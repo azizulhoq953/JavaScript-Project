@@ -12,8 +12,17 @@
 // z= x%n;
 
 // console.log(z)
-let n= NaN;
-let x= "5";
-let z=n+x;
 
-console.log(typeof z)
+// let n= NaN;  //not anumber
+// let x= "5";
+// let z=n+x;
+
+// console.log(typeof z)
+
+// let x=123
+// let Nam=x.toString();  //convert number to.string
+// console.log( Nam);
+
+let x=9.656;
+let nume= x.toExponential(2);
+console.log(typeof nume);
