@@ -23,6 +23,22 @@
 // let Nam=x.toString();  //convert number to.string
 // console.log( Nam);
 
-let x=9.656;
-let nume= x.toExponential(2);
-console.log(typeof nume);
+// let x=7.656;
+// let nume= x.toExponential(2);
+//                                 //exponential 7.66e+0 power
+// console.log(typeof nume);
+
+let z= 8.656;
+let fix= z.toFixed(4); //  Same Way x.toPrecision(2)
+console.log(fix)
+
+
+let x=Number.MAX_VALUE;
+                        //javaScript Hiest Number Return
+console.log(x);
+
+let n = Number.MIN_VALUE;
+console.log(n);   //javaScript Lowest Number Return
+
+let i = Number.POSITIVE_INFINITY;
+console.log(i);
