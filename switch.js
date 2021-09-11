@@ -140,10 +140,17 @@ console.log(str.substr(7,12))
 
 // console.log(newText)
 
-let temp=`bangladesh is ` //js temlate
-let a = 30;
-let b= 25;
-//let template = "" ${temp} Enviornments population country ${a+b}"
-let template = `${temp} Enviornments population country ${a+b}`
+// let temp=`bangladesh is ` //js temlate
+// let a = 30;
+// let b= 25;
+// //let template = "" ${temp} Enviornments population country ${a+b}"
+// let template = `${temp} Enviornments population country ${a+b}`
 
-console.log(template)
+// console.log(template)
+
+//cars =["bangladesh",
+//console.log(cars)//.length)
+
+const fruits  = ["Banana","apple","orange","Mango"];
+fruits[4]="PineApple";
+console.log(fruits[fruits.length - 1]);
