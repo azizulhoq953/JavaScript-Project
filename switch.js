@@ -151,6 +151,40 @@ console.log(str.substr(7,12))
 //cars =["bangladesh",
 //console.log(cars)//.length)
 
-const fruits  = ["Banana","apple","orange","Mango"];
-fruits[4]="PineApple";
-console.log(fruits[fruits.length - 1]);
+// const fruits  = ["Banana","apple","orange","Mango"];
+// fruits[4]="PineApple";
+// console.log(fruits[fruits.length - 1]);
+
+//const fruits =["Banana","Apple","mango","pineApple","cucumba"];
+
+// for (i=0; i < fruits.length; i++){
+// console.log(i);
+// console.log(fruits[i]);//fruits.sort()
+// }
+
+
+// orderlist declear for loop
+// const Air =["Banana","Apple","mango","pineApple","cucumba"];
+
+// let fLen = Air.length;
+
+// let text = "<ul>";
+// for ( i = 0; i <fLen; i++) {
+//   text += "<li>" + Air[i] + "</li>";
+// }
+// text += "</ul>";
+// document.write(text);
+// console.log(text);
+
+
+const fruits = ["Banana","Apple","Mango","Orenge","PineApple"]
+
+
+function myFunction(value){
+
+    console.log(value);
+}                            //Function Call
+
+fruits.forEach(myFunction);
+console.log("Finished")
+//document.write(typeof fruits)
