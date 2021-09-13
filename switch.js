@@ -177,14 +177,18 @@ console.log(str.substr(7,12))
 // console.log(text);
 
 
-const fruits = ["Banana","Apple","Mango","Orenge","PineApple"]
+// const fruits = ["Banana","Apple","Mango","Orenge","PineApple"]
 
 
-function myFunction(value){
+// function myFunction(value){
 
-    console.log(value);
-}                            //Function Call
+//     console.log(value);
+// }                            //Function Call
 
-fruits.forEach(myFunction);
-console.log("Finished")
-//document.write(typeof fruits)
+// fruits.forEach(myFunction);
+// console.log("Finished")
+// //document.write(typeof fruits)
+
+const number = [1,2,3,4];
+
+const person =["Name:Azizul","Age:32"]
