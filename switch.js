@@ -189,6 +189,20 @@ console.log(str.substr(7,12))
 // console.log("Finished")
 // //document.write(typeof fruits)
 
-const number = [1,2,3,4];
+// const number = [1,2,3,4];
 
-const person =["Name:Azizul","Age:32"]
+// const person =["Name:Azizul","Age:32"]
+
+
+
+// const fruits = ["orenge","Mango","Banana","PineApple"," "];
+
+// fruits.join("*" )  //method array
+
+// console.log(fruits);
+
+
+const fruits = ["orenge","Mango","Banana","PineApple"," "];
+
+let a =fruits.pop(); //pop method
+console.log(a);
