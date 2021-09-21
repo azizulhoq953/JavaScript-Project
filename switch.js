@@ -202,7 +202,11 @@ console.log(str.substr(7,12))
 // console.log(fruits);
 
 
-const fruits = ["orenge","Mango","Banana","PineApple"," "];
+// const fruits = ["orenge","Mango","Banana","PineApple"," "];
 
-let a =fruits.pop(); //pop method
-console.log(a);
+// let a =fruits.pop(); //pop method
+// console.log(a);
+
+
+const fruits = ["Banana","orenge","Apple","Mango"];
+console.log(fruits.toString());
