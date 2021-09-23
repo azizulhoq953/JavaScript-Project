@@ -208,5 +208,15 @@ console.log(str.substr(7,12))
 // console.log(a);
 
 
-const fruits = ["Banana","orenge","Apple","Mango"];
-console.log(fruits.toString());
+// const fruits = ["Banana","orenge","Apple","Mango"];
+// //fruits.sort();
+// fruits.reverse();
+// console.log(fruits.toString());
+
+const points=[40,100,1,5,25,9,10];
+points.sort(
+    function(a,b){
+        return a - b
+    },
+);
+console.log(points)
