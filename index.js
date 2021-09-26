@@ -19,22 +19,32 @@
             document.write("number Is Zero="+num)
             */
            //letter grade
-           var num=parseFloat(prompt("Enter Your Latter Grade"))
+          //  var num=parseFloat(prompt("Enter Your Latter Grade"))
 
-           if(num>=80)
-                document.write("GPA:5.00\n"+"Grade:A+\n" +"Point="+num)
-           else if(num>=70)
-                document.write("GPA:4.00\n"+"Grade:A\n"+"Point=" +num)
-           else if(num>=60)
-                document.write("GPA:3.00\n"+"Grade:B\n"+"Point="+num)
-           else if (num>=50)
-                document.write("GPA:2.00\n\n"+"Grade:C\n"+"Point=" +num)
-           else if (num>=40)
-                document.write("GPA:1.00\n"+"Grade:D\n"+"Point=" +num)
-           else if(num>=33)
-                document.write("Passed"+"Grde:E\n"+"Point="+num)
+          //  if(num>=80)
+          //       document.write("GPA:5.00\n"+"Grade:A+\n" +"Point="+num)
+          //  else if(num>=70)
+          //       document.write("GPA:4.00\n"+"Grade:A\n"+"Point=" +num)
+          //  else if(num>=60)
+          //       document.write("GPA:3.00\n"+"Grade:B\n"+"Point="+num)
+          //  else if (num>=50)
+          //       document.write("GPA:2.00\n\n"+"Grade:C\n"+"Point=" +num)
+          //  else if (num>=40)
+          //       document.write("GPA:1.00\n"+"Grade:D\n"+"Point=" +num)
+          //  else if(num>=33)
+          //       document.write("Passed"+"Grde:E\n"+"Point="+num)
 
-           else
-                 document.write("Fail="+num)
+          //  else
+          //        document.write("Fail="+num)
 
            
+var sum=0,x;
+
+
+for(x=1;x<5;x++){
+
+     sum=sum+x;
+
+     document.write(sum);
+
+}

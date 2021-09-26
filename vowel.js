@@ -10,8 +10,16 @@
 
 // else
 // document.write("Consonant")
-const myGril = ["Cecilie","Lone"];
-const myBoys = ["Email","Tobies","Linus"];
-const myChild =myGril.concat(myBoys);
+// const myGril = ["Cecilie","Lone"];
+// const myBoys = ["Email","Tobies","Linus"];
+// const myChild =myGril.concat(myBoys);
 
-document.write(myChild);
+// document.write(myChild);
+
+
+var sum=0,x;
+for(x=1; x<4;x++){
+    sum=sum+x;
+
+}
+document.write(sum);
