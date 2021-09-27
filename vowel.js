@@ -17,9 +17,22 @@
 // document.write(myChild);
 
 
-var sum=0,x;
-for(x=1; x<4;x++){
-    sum=sum+x;
+// var sum=0,x;
+// for(x=1; x<4;x++){
+//     sum=sum+x;
 
+// }
+// document.write(sum);
+
+var m=prompt("Enter Number Of Process:");
+var n=prompt("Enter last Number Of Process:");
+
+for (var x=m; x<=n; x++) {
+    var num1=parseInt(prompt("Enter Yor First Number"));
+
+    var num2=parseInt(prompt("Enter Your Last Number"));
+    
+    var sum=num1+num2;
+    
 }
-document.write(sum);
+console.log(sum);
