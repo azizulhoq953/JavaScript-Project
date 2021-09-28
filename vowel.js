@@ -24,15 +24,34 @@
 // }
 // document.write(sum);
 
-var m=prompt("Enter Number Of Process:");
-var n=prompt("Enter last Number Of Process:");
+// using for loop
+// var m=prompt("Enter Number Of Process:");
+// var n=prompt("Enter last Number Of Process:");
 
-for (var x=m; x<=n; x++) {
-    var num1=parseInt(prompt("Enter Yor First Number"));
+// for (var x=m; x<=n; x++) {
+//     var num1=parseInt(prompt("Enter Yor First Number"));
 
-    var num2=parseInt(prompt("Enter Your Last Number"));
+//     var num2=parseInt(prompt("Enter Your Last Number"));
     
-    var sum=num1+num2;
+//     var sum=num1+num2;
     
+// }
+// console.log(sum);
+
+
+//using while loop
+
+
+var x=1;
+var sum=0;
+
+while(x<=15){
+
+    if(x%3==0 && x%5==0){
+        document.write(" "+i);
+        sum=sum+x;
+    }
+    x=x+1;
 }
-console.log(sum);
+document.write(" "+sum);
+    document.write("\n");
