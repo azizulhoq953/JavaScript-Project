@@ -42,16 +42,43 @@
 //using while loop
 
 
-var x=1;
-var sum=0;
+// var x=1;
+// var sum=0;
 
-while(x<=15){
+// while(x<=15){
 
-    if(x%3==0 && x%5==0){
-        document.write(" "+i);
-        sum=sum+x;
-    }
-    x=x+1;
-}
-document.write(" "+sum);
-    document.write("\n");
+//     if(x%3==0 && x%5==0){
+//         document.write(" "+i);
+//         sum=sum+x;
+//     }
+//     x=x+1;
+// }
+// document.write(" "+sum);
+//     document.write("\n");
+
+//using do while loop
+
+// var i=0;
+
+// do{
+//     document.write(" ",+i);
+//     i++;
+// } while(i<=20);
+
+//using break condition
+// for(var i=10;i<100;i++){
+  
+//     if(i%2 !=0){
+//       continue;  //break
+//     }
+//     document.write(" ",+i);
+// }
+// document.write(" "+"The Break")
+
+
+(function write(num1,num2)
+ {
+   sum=num1+num2;
+  document.write(sum);
+  
+})(11,23);
