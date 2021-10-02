@@ -76,9 +76,9 @@
 // document.write(" "+"The Break")
 
 
-(function write(num1,num2)
- {
-   sum=num1+num2;
-  document.write(sum);
+// (function write(num1,num2)
+//  {
+//    sum=num1+num2;
+//   document.write(sum);
   
-})(11,23);
+// })(11,23);
