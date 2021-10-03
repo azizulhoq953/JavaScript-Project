@@ -20,15 +20,31 @@
 //     test.innerHTML="Hey What Is Your Name.?";
 //     test.innerHTML="Hey Man How Are You.?";
 //}
-var myimg2 =  document.querySelectorsrc("#myimg1");
-function myPicture1(){
 
-    myimg2.src="img/az1.jpg";
+// //js onclick img property set
+// var myVar = document.querySelector(".myimg");
+// function myPicture1(){
+//     myVar.src="img/azizur.jpg"
+   
+// }
+
+// function myPicture2(){
+//     myVar.src="img/my.jpg";
+    
   
-}
+// }
 
-function myPicture2(){
+var creat=document.createElement("h2");
 
-    myimg2.src="img/az2.jpg";
-  
-}
+var text=document.createTextNode("My Simple Text Create by js");
+
+creat.appendChild(text);
+var mydiv=document.querySelector(".heading");
+mydiv.appendChild(creat);
+
+var remove=document.getElementsByTagName("h1")[1];
+
+mydiv.removeChild(remove);
+
+
+
