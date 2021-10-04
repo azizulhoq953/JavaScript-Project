@@ -34,17 +34,43 @@
   
 // }
 
-var creat=document.createElement("h2");
+// //remove property
+// var creat=document.createElement("h2");
 
-var text=document.createTextNode("My Simple Text Create by js");
+// var text=document.createTextNode("My Simple Text Create by js");
 
-creat.appendChild(text);
-var mydiv=document.querySelector(".heading");
-mydiv.appendChild(creat);
+// creat.appendChild(text);
+// var mydiv=document.querySelector(".heading");
+// mydiv.appendChild(creat);
 
-var remove=document.getElementsByTagName("h1")[1];
+// var remove=document.getElementsByTagName("h1")[1];
 
-mydiv.removeChild(remove);
+// mydiv.removeChild(remove);
+
+var photos = ["img/azizur.jpg","img/azie.jpg","img/my.jpg"];
+var imgTag =document.querySelector("img");
+var count=0;
+function next(){
+    count ++;
+    if(count>=photos.length){
+        count=0;
+        imgTag.src = photos[count];
+    }else{
+        imgTag.src = photos[count];
+    }
+
+}
+
+function prev(){
+    count --;
+    if(count < 0){
+        count=photos.length -1;
+        imgTag.src = photos[count];
+    }else{
+        imgTag.src = photos[count];
+    }
+}
+
 
 
 
