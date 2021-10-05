@@ -47,29 +47,71 @@
 
 // mydiv.removeChild(remove);
 
-var photos = ["img/azizur.jpg","img/azie.jpg","img/my.jpg"];
-var imgTag =document.querySelector("img");
-var count=0;
-function next(){
-    count ++;
-    if(count>=photos.length){
-        count=0;
-        imgTag.src = photos[count];
-    }else{
-        imgTag.src = photos[count];
-    }
+// //img continous chang by click
+// var photos = ["img/azizur.jpg","img/azie.jpg","img/my.jpg"];
+// var imgTag =document.querySelector("img");
+// var count=0;
+// function next(){
+//     count ++;
+//     if(count>=photos.length){
+//         count=0;
+//         imgTag.src = photos[count];
+//     }else{
+//         imgTag.src = photos[count];
+//     }
+
+// }
+
+// function prev(){
+//     count --;
+//     if(count < 0){
+//         count=photos.length -1;
+//         imgTag.src = photos[count];
+//     }else{
+//         imgTag.src = photos[count];
+//     }
+// }
+
+
+// var myvar=document.querySelectorAll("h1");
+// myvar.addEventListener("mouseover",function(){
+
+
+//     myvar.classList.add(".myn");
+
+// });
+
+for (var i=0;i<=3;i++){
+    document.querySelectorAll(".myButton")[i].addEventListener("click",function(){
+        var text =this.innerHTML;
+        document.querySelector("h1").innerHTML = text + "is Music Ply";
+       console.log(text);
+        switch(text){
+            case "button1":
+                var audio=new Audio('sound/music(1).mp3')
+                audio.play();
+                break;
+
+                case "button2":
+                    var audio=new Audio('sound/music(2).mp3')
+                    audio.play();
+                    break;
+
+                    case "button3":
+                        var audio=new Audio('sound/music(3).mp3')
+                        audio.play();
+                        break;
+        }
+
+    })
+    
 
 }
 
-function prev(){
-    count --;
-    if(count < 0){
-        count=photos.length -1;
-        imgTag.src = photos[count];
-    }else{
-        imgTag.src = photos[count];
-    }
-}
+
+
+
+
 
 
 
