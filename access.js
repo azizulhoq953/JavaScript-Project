@@ -86,28 +86,51 @@ for (var i=0;i<=3;i++){
         var text =this.innerHTML;
         document.querySelector("h1").innerHTML = text + "is Music Ply";
        console.log(text);
-        switch(text){
-            case "button1":
-                var audio=new Audio('sound/music(1).mp3')
-                audio.play();
-                break;
+       audioPlay(text);
+       playAnimation(text);
+        
 
-                case "button2":
-                    var audio=new Audio('sound/music(2).mp3')
-                    audio.play();
-                    break;
-
-                    case "button3":
-                        var audio=new Audio('sound/music(3).mp3')
-                        audio.play();
-                        break;
-        }
-
-    })
+    });
     
 
 }
 
+document.addEventListener("keypress", function(event){
+    var text = event.key;
+    audioPlay(text);
+    playAnimation(text);
+});
+
+
+function audioPlay(text){
+    switch(text){
+        case "a":
+            var audio=new Audio("sounds/sound.m4a");
+            audio.play();
+            break;
+    
+            case "b":
+                var audio=new Audio("sound/music1.mp3");
+                audio.play();
+                break;
+    
+                case "c":
+                    var audio=new Audio("sounds/sound.m4a");
+                    audio.play();
+                    break;
+    }
+    
+    function  playAnimation(text){
+       var selectedButton= document.querySelector("."+text);
+        selectedButton.classList.add("anim");
+       
+        setTimeout(function(){
+            selectedButton.classList.add("anim");
+        },1000);
+
+    }
+
+}
 
 
 
