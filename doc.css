@@ -1,0 +1,26 @@
+body{
+    background-color: antiquewhite;
+    border-radius: none;
+    padding: 10px;
+}
+
+.main{
+    font-size: 20px;
+    font-style: italic;
+    align-items: center;
+}
+.main .logo{
+    font-size: 30px;
+    font-style: initial;
+    font-weight: 100;
+    color: chocolate;
+    text-shadow: 0.5 0.7 0.9;
+}
+
+form{
+    background-size:25px;
+background-position-x: right;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
