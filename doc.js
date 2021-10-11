@@ -5,7 +5,19 @@
 // console.dir(document.port)
 // console.dir(document.div)
 
-let element=document.getElementById('lname')
+// let items = document.get('logo')
+// console.log(items);
 
-console.log(element.textContent);
-console.log(element.innerText);
+// let header=document.querySelector('.logo');
+// header.textContent='Azizur Rahman';
+// console.log(header);
+
+// let child=document.querySelector('head')
+// console.log(child)
+
+// let body=document.querySelector('body')
+// console.log(body)
+
+let items=document.querySelector('.main:First-child');
+items.style.color='red';
+console.log(items)
