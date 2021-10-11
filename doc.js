@@ -18,6 +18,11 @@
 // let body=document.querySelector('body')
 // console.log(body)
 
-let items=document.querySelector('.main:First-child');
-items.style.color='red';
-console.log(items)
+// let items=document.querySelector('.main:First-child');
+// items.style.color='red';
+// console.log(items)
+
+const parent = document.querySelector('.main')
+
+const child =parent.children;
+console.log(child[0]);
