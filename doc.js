@@ -22,7 +22,15 @@
 // items.style.color='red';
 // console.log(items)
 
-const parent = document.querySelector('.main')
+// const parent = document.querySelector('.main')
 
-const child =parent.children;
-console.log(child[0]);
+// const child =parent.children;
+// console.log(child[0]);
+
+//event listener
+
+const Header=document.querySelector('#logo');
+
+Header.addEventListener('mouseleave', (event)=>{
+    console.log(event)
+});

@@ -5,15 +5,18 @@ box-sizing:border-box;
 list-style-type:none;
 text-decoration:none;
 outline:0;
+background-color: aqua;
 
 }
 
 .main{
+
     font-size: 20px;
     font-style: italic;
     align-items: center;
+    text-align: center;
 }
-.main .logo{
+.main #logo{
     font-size: 30px;
     font-style: initial;
     font-weight: 100;
