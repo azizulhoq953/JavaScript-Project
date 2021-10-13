@@ -29,8 +29,10 @@
 
 //event listener
 
-const Header=document.querySelector('#logo');
+// const Header=document.querySelector('#logo');
 
-Header.addEventListener('mouseleave', (event)=>{
+const Header = document.querySelector('input[type="text"]');
+
+Header.addEventListener('cut', (event)=>{
     console.log(event)
 });
