@@ -44,25 +44,53 @@
 // }
 
 
-const saveButton=document.querySelector('.btn-button');
+// const saveButton=document.querySelector('.btn-button');
+// const alern =document.querySelector('.message');
+
+//saveButton.addEventListener("click",saveUser);
+
+
+// function saveUser() {
+//     let count=0;
+//     alern.textContent=count;
+
+//     // alern.textContent= "User Registration Successful"
+//     // //set timeout
+//     // setTimeout(()=>{
+//     //     alern.textContent="";
+//     // },2000);
+
+//     setInterval(()=>{
+//         count++;
+//         alern.textContent=count;
+//         },2000);
+// }
+
 const alern =document.querySelector('.message');
+saveButton.addEventListener("click", startClock);
+function startClock(){
+    let date=new Date();
+    let hours=date.getHours();
+    let minutes=date.getMinutes();
+    let seconds =date.getSeconds();
 
-saveButton.addEventListener("click",saveUser);
+    minutes = formatTime(minutes);
+    seconds = formatTime(seconds);
 
-function saveUser() {
-    let count=0;
-    alern.textContent=count;
+    let time = hours + ":" + seconds;
 
-    // alern.textContent= "User Registration Successful"
-    // //set timeout
-    // setTimeout(()=>{
-    //     alern.textContent="";
-    // },2000);
+    alern.textContent = time;
+    setInterval(startClock,1000);
+}
 
-    setInterval(()=>{
-        count++;
-        alern.textContent=count;
-        },2000);
+    
+  
+
+function formatTime (value){
+    if(value<10){
+        value ="0"+value;
+    }
+    return value;
 }
 
 
