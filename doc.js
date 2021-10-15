@@ -27,12 +27,17 @@
 // const child =parent.children;
 // console.log(child[0]);
 
-//event listener
+// //event listener
 
 // const Header=document.querySelector('#logo');
 
-const Header = document.querySelector('input[type="text"]');
+// const Header = document.querySelector('input[type="text"]');
 
-Header.addEventListener('cut', (event)=>{
-    console.log(event)
-});
+// Header.addEventListener('cut', (event)=>{
+//     console.log(event)
+// });
+
+let formElement=document.querySelector(onclick,'form');
+
+let TaskElement=document.querySelector('.task');
+
