@@ -17,19 +17,19 @@
 // console.log(numbers)
 
 //concatenate object using spreed opearator
-let p1={
-    name:'Azizul Hoq',
-    age:21,
+// let p1={
+//     name:'Azizul Hoq',
+//     age:21,
 
-}
+// }
 
-let p2={
-    nationality:'Bangladesh',
-    occupation:'student',
+// let p2={
+//     nationality:'Bangladesh',
+//     occupation:'student',
 
-}
-let p={...p1, ...p2}
-console.log(p);
+// }
+// let p={...p1, ...p2}
+// console.log(p);
 
 
 
@@ -47,3 +47,25 @@ console.log(p);
 //     console.log(`x=${x},y=${y} z=${z}`)
 // }
 // sum(10,20,30,40,66,70);
+
+
+// var numArray = [14632];
+
+// numArray.sort(function(a, b) {
+//   return b - a;
+  
+// });
+// console.log(numArray);
+
+// // prompt user
+// let n = Number(prompt('Enter a number: '));
+
+// console.log(n + ' * ' + n + ' = ' + n*n);
+
+var numArray=[42145]
+numArray.sort(function descendingOrder(n){
+  
+  return n;
+  //...
+});
+console.log(numArray)
