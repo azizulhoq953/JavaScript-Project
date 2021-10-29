@@ -1,4 +1,4 @@
-//study For Goole ForEach Map Filter Details
+//study For Google ForEach Map Filter Details
 
 
 //using filter working is new array condition waise
