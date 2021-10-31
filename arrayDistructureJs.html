@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Array Distructure Js</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        
+        <script>
+            
+            //Object
+            const studentsinfo={
+                id:101,
+                FullName:'AzizulHoq',
+                cgpa:3.92,
+
+            }
+
+            console.log(studentsinfo.id)
+            console.log(studentsinfo.FullName)
+            console.log(studentsinfo.cgpa)
+
+            //Object distruction
+            let {id,FullName,cgpa}=studentsinfo
+
+            console.log(id)
+            console.log(FullName)
+            // console.log(studentsinfo.FullName)
+            console.log(cgpa)
+
+
+            /*//swap variable distructure
+            let a=10, b=20;
+            [a,b]=[b,a]
+            console.log(a,b)*/
+
+         /*   //array distructure
+            var array=[10,20,30,50,60]
+
+            //split
+            let[num1,num2, ...z]=array
+            console.log(z)
+            // let[num1,num2,num3,num4]=array
+            // console.log(num1,num2)
+            */
+        </script>
+    </body>
+</html>
