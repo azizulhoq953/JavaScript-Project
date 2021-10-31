@@ -16,27 +16,45 @@
         
         
         <script>
-            
+           
             //Object
-            const studentsinfo={
+            // const studentsinfo={
+            //     id:101,
+            //     FullName:'AzizulHoq',
+            //     cgpa:3.92,
+
+            // }
+
+            // console.log(studentsinfo.id)
+            // console.log(studentsinfo.FullName)
+            // console.log(studentsinfo.cgpa)
+
+            // //Object distruction
+            // let {id,FullName,cgpa}=studentsinfo
+
+            // console.log(id)
+            // console.log(FullName)
+            // // console.log(studentsinfo.FullName)
+            // console.log(cgpa)
+
+            //Nested Object
+            const studentDetails={
                 id:101,
                 FullName:'AzizulHoq',
                 cgpa:3.92,
+                
+                languages:{
+                    native:'Bangla',
+                    beginner:'English',
+                    country:'Bangladesh',
+                }
 
             }
 
-            console.log(studentsinfo.id)
-            console.log(studentsinfo.FullName)
-            console.log(studentsinfo.cgpa)
+            let{FullName,languages}=studentDetails
+            console.log(languages.native)
 
-            //Object distruction
-            let {id,FullName,cgpa}=studentsinfo
-
-            console.log(id)
-            console.log(FullName)
-            // console.log(studentsinfo.FullName)
-            console.log(cgpa)
-
+            
 
             /*//swap variable distructure
             let a=10, b=20;
