@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Arrow MapFilter</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        
+        <script>
+            //traditional Function
+            var student=[
+                {
+                    Id:12021,
+                    Name:'azizul',
+                    cgpa:3.44,
+                },
+                {
+                    Id:12021,
+                    Name:'Galib',
+                    cgpa:3.56,
+
+                },
+                {
+                    Id:12022,
+                    Name:'Shifat',
+                    cgpa:3.66,
+
+                },
+                {
+                    Id:12023,
+                    Name:'Shifat',
+                    cgpa:2.96,
+
+                },
+                {
+                    Id:12024,
+                    Name:'Shifat',
+                    cgpa:2.46,
+
+                },
+            ]
+            function studentName1(){
+               return student.filter(function(x){
+                    return x.cgpa > 3
+                }).map(function(y){
+                    return y.Name;
+                });
+            }
+
+
+            //arrow function 
+            let studentName2=() =>{
+               return student.filter((x) =>x.cgpa>3).map((y) => y.Name);
+            }
+
+            //console.log(studentName1());
+            console.log(studentName2());
+
+        //     var bangladesh=[{
+        //         Barishal:'Patuakhali , Jhalokhati, Bhola, Pirojpur',
+        //         patuakhali:2300,
+        //         jhalokhati:8854,
+        //         bhola:902,
+
+
+        //     },
+        //     {
+               
+        //         Khulna:'Jassor,satkhira,Kustia,Jenaidhao',
+        //         jassor:2100,
+        //         satkhira:2455,
+        //         kustia:2700,
+                
+        //     },
+        // ]
+        // function division(){
+        //     return bangladesh.filter(function(x){
+        //         return x.patuakhali>2200;
+        //     }).map(function(y){
+        //         return y.Khulna;
+        //     })
+        // }
+        // console.log(division())
+        </script>
+    </body>
+</html>
