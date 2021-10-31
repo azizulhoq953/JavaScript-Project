@@ -17,25 +17,53 @@
         
         <script>
            
-            //Object
-            // const studentsinfo={
-            //     id:101,
-            //     FullName:'AzizulHoq',
-            //     cgpa:3.92,
+         
+            // const studentsinfo=(student)=>{
+            //     console.log(`${student.id},${student.FullName}`)
 
             // }
 
-            // console.log(studentsinfo.id)
+            // const student={
+            //     id:101,
+            //     FullName:'azizul Hoq',
+            // }
+            // studentsinfo(student)
+
+               //function destructuring parameter
+            const studentsinfo=({id,FullName})=>{
+                console.log(`${student.id},${student.FullName}`)
+
+            }
+
+            const student={
+                id:101,
+                FullName:'azizul Hoq',
+            }
+            studentsinfo(student)
+
+
+
+
+           /*
+           // Object
+            const studentsinfo={
+                id:101,
+                FullName:'AzizulHoq',
+                cgpa:3.92,
+
+            }
+
+            console.log(studentsinfo.id)
+            console.log(studentsinfo.FullName)
+            console.log(studentsinfo.cgpa)
+
+            //Object destructuring
+            let {id,FullName,cgpa}=studentsinfo
+
+            console.log(id)
+            console.log(FullName)
             // console.log(studentsinfo.FullName)
-            // console.log(studentsinfo.cgpa)
-
-            // //Object distruction
-            // let {id,FullName,cgpa}=studentsinfo
-
-            // console.log(id)
-            // console.log(FullName)
-            // // console.log(studentsinfo.FullName)
-            // console.log(cgpa)
+            console.log(cgpa)
 
             //Nested Object
             const studentDetails={
@@ -53,15 +81,19 @@
 
             let{FullName,languages}=studentDetails
             console.log(languages.native)
-
+            */
             
 
-            /*//swap variable distructure
+
+            /*//swap variable destructuring
             let a=10, b=20;
             [a,b]=[b,a]
             console.log(a,b)*/
 
-         /*   //array distructure
+
+
+
+         /*   //array destructuring
             var array=[10,20,30,50,60]
 
             //split
