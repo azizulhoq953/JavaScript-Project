@@ -2,9 +2,11 @@
 //function - open(), send(), setRequestHeader()
 
 
-const makeRequest = (method,url) =>{
+const makeRequest = (method,url,data) =>{
     const xhr = new  XMLHttpRequest();
     xhr.open(method,url); //method request GET
+
+    xhr.setRequestHeader('Content-Type','application/json');
 
     xhr.onload=()=>{
         let data = xhr.response;
@@ -12,7 +14,7 @@ const makeRequest = (method,url) =>{
     
 }
 
-    xhr.send();
+    xhr.send(JSON.stringify(data));
 }
 const getData=()=>{
 
@@ -20,4 +22,14 @@ const getData=()=>{
     
     }
 
-getData(); 
+    const sendData=()=>{
+
+        makeRequest('POST','https://jsonplaceholder.typicode.com/posts',{
+            title: 'foo',
+            body: 'bar',
+            userId: 1,
+        });
+        
+        }
+//getData(); 
+sendData()
