@@ -32,4 +32,37 @@ const getData=()=>{
         
         }
 //getData(); 
-sendData()
+//sendData()
+
+const updateData=()=>{
+
+    makeRequest('PUT','https://jsonplaceholder.typicode.com/posts/1',{
+        id: 1,
+        title: 'fooMA',
+        body: 'barMA',
+        userId: 1,
+    });
+    
+    }
+    //updateData();
+    const updateSingleData=()=>{
+
+        makeRequest('PUT','https://jsonplaceholder.typicode.com/posts/1',{
+           
+            title: 'Chaing to single line',
+            
+        });
+        
+        }
+        //updateSingleData();
+
+        const deleteData=()=>{
+
+            makeRequest('DELETE','https://jsonplaceholder.typicode.com/posts/1',{
+               
+                title: 'Chaing to single line',
+                
+            });
+            
+            }
+            deleteData();
