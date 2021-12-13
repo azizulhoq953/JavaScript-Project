@@ -21,8 +21,9 @@
 //     name:'Azizul Hoq',
 //     age:21,
 
-// }
 
+ //}
+//
 // let p2={
 //     nationality:'Bangladesh',
 //     occupation:'student',
