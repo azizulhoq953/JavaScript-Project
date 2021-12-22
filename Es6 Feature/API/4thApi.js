@@ -35,5 +35,13 @@ async function getUsers(){
 }
 
 getUsers().then(response=>{
-    console.log(response)
+   // console.log(response)
 })
+
+//axios- third party javaScript library
+axios.get('https://jsonplaceholder.typicode.com/todos/ ')
+    .then(response=>{
+        console.log(response.data);
+    },err=>{
+        console.log(err)
+    })
