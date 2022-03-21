@@ -1,3 +1,4 @@
+//date print f
 var date = new Date();
 console.log(date);
 
