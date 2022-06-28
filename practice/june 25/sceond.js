@@ -11,3 +11,4 @@ return x*y;
 
 let m=myfunction(10,20)
 console.log(m);
+//function
